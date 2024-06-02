@@ -44,3 +44,18 @@ openssl rsa -pubout -in test_rsa_privkey.pem -out test_rsa_pubkey.pem
 ```
 node main.js
 ```
+
+### Ngrok
+幫訊息加上一條保護層，避免外人監聽流量
+
+1. 取得 authentication token 之後，將其配置在本地端
+```
+ngrok config add-authtoken 2hKHdIRtY4VxqKBzobUK5MIv22X_jQnCxZ26pfrmTyRBPv68
+```
+2. 查看配置
+
+```
+ngrok http 6650                                                            
+```
+![註冊連結](https://dashboard.ngrok.com/)
+
