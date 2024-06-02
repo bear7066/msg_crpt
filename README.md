@@ -1,10 +1,14 @@
 # Meassage Encrption / Decrption in pulsar 
 
 ### 1. 首先起一個 standalone pulsar 
-``` docker run --platform linux/amd64 -it -p 6650:6650 -p 8080:8080 apachepulsar/pulsar:2.7.0 bin/pulsar standalone ```
+``` 
+docker run --platform linux/amd64 -it -p 6650:6650 -p 8080:8080 apachepulsar/pulsar:2.7.0 bin/pulsar standalone 
+```
 
 ### 關掉之後可用這個指令重啟
-``` docker start [container_name]```
+``` 
+docker start [container_name]
+```
 
 ### 2. 創建租戶（Tenant）
 ```
@@ -73,5 +77,5 @@ tunnels:
     auth: "user2:password2"
 ```
 
-![註冊連結](https://dashboard.ngrok.com/)
+[註冊連結](https://dashboard.ngrok.com/)
 
