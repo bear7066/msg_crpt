@@ -57,5 +57,21 @@ ngrok config add-authtoken 2hKHdIRtY4VxqKBzobUK5MIv22X_jQnCxZ26pfrmTyRBPv68
 ```
 ngrok http 6650                                                            
 ```
+- 也可以使用 ngrok.yml 手動配置可以通過保護層的人，如下：
+```
+ngrok.yml
+
+authtoken: YOUR_AUTH_TOKEN
+tunnels:
+  user1:
+    proto: http
+    addr: 6650
+    auth: "user1:password1"
+  user2:
+    proto: http
+    addr: 6650
+    auth: "user2:password2"
+```
+
 ![註冊連結](https://dashboard.ngrok.com/)
 
