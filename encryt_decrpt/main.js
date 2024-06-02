@@ -6,9 +6,10 @@ const topic = 'persistent://my-tenant/my-ns/my-topic';
 
 (async () => {
     try {
+        
         // Create a client
         const client = new Pulsar.Client({
-            serviceUrl: 'pulsar://localhost:6650', // Correctly specify the service URL
+            serviceUrl: 'pulsar://localhost:6650',
             operationTimeoutSeconds: 30,
         });
 
